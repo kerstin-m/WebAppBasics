@@ -1,0 +1,49 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+:root {
+  --Goldenlight: hsl(43, 74%, 49%);
+  --NightBlue: hsl(240, 100%, 27%);
+}
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body {
+  background-color: var(--Goldenlight);
+  transition: 1s ease-in-out background-color;
+}
+.body-dark {
+  background-color: var(--NightBlue);
+}
+button {
+  width: 5em;
+  height: 2em;
+  color: var(--NightBlue);
+  background-color: var(--Goldenlight);
+  font-family: monospace;
+  font-size: 25px;
+  font-weight: 1200;
+  padding: none;
+  margin: none;
+  text-align: center;
+  border: 5px solid var(--NightBlue);
+}
+
+.button-dark {
+  background-color: var(--NightBlue);
+  color: var(--Goldenlight);
+  border: 5px solid var(--Goldenlight);
+  box-shadow: 0 0 5px var(--Goldenlight), 0 0 10px var(--Goldenlight),
+    0 0 20px var(--Goldenlight);
+}
