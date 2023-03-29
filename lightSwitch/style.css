@@ -8,10 +8,7 @@ html,
 body {
   height: 100%;
 }
-:root {
-  --Goldenlight: hsl(43, 74%, 49%);
-  --NightBlue: hsl(240, 100%, 27%);
-}
+
 body {
   margin: 0;
   display: flex;
@@ -19,11 +16,15 @@ body {
   justify-content: center;
 }
 
+:root {
+  --Goldenlight: hsl(43, 74%, 49%);
+  --NightBlue: hsl(240, 100%, 27%);
+}
 .body {
   background-color: var(--Goldenlight);
   transition: 1s ease-in-out background-color;
 }
-.body-dark {
+.body-night {
   background-color: var(--NightBlue);
 }
 button {
@@ -40,7 +41,7 @@ button {
   border: 5px solid var(--NightBlue);
 }
 
-.button-dark {
+.button-night {
   background-color: var(--NightBlue);
   color: var(--Goldenlight);
   border: 5px solid var(--Goldenlight);
