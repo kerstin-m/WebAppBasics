@@ -1,0 +1,11 @@
+html {
+  font-size: 2em;
+  font-family: monospace;
+}
+
+form {
+  display: grid;
+  grid-template-columns: min-content, min-content;
+  padding: 2rem;
+  border: 1px solid black;
+}
